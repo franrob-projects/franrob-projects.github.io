@@ -1890,7 +1890,7 @@
   <div class="sidebar-box">
     <div class="tools" role="navigation">
 <ul>
-<li class="tool edit"><a href="https://github.com/franrob-projects/docs-couchbase-lite/edit/release/3.0/modules/csharp/pages/releasenotes.adoc" title="Edit Page" target="_blank" rel="noopener" class="remove-ext-icon">Edit on GitHub</a></li>
+<li class="tool edit"><a href="file:///Users/francisroberts/code/docs-couchbase-lite/modules/csharp/pages/releasenotes.adoc" title="Edit Page" target="_blank" rel="noopener" class="remove-ext-icon">Edit on GitHub</a></li>
 </ul>
 </div>
     <div class="toc-menu"></div>
@@ -1968,9 +1968,125 @@
 <span class="last-commit-date" id="commitdate">    </span>
 <ul id="contributorList"></ul>
 <span  id="otherContributor"> + </span>
-</div><div id="preamble">
+</div><div class="sect1">
+<h2 id="maint-3-0-12"><a class="anchor" href="#maint-3-0-12"></a>3.0.12&#8201;&#8212;&#8201;June 2023</h2>
 <div class="sectionbody">
-<div id="maint-latest" class="quoteblock abstract">
+<div class="paragraph">
+<p>Version 3.0.12 for C#.Net delivers the following features and enhancements:</p>
+</div>
+<div class="sect2">
+<h3 id="enhancements"><a class="anchor" href="#enhancements"></a>Enhancements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4550">CBL-4550 - Make IReachability interface public</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4531">CBL-4531 - Update PublicKey+Apple to use non deprecated keychain APIs</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4167">CBL-4167 - SQL++ : COLLATE does not have a way to specify locale for UNICODE</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4024">CBL-4024 - Change BuiltInWebSocket to do preemptive auth instead of challenge auth by default (Port)</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-3903">CBL-3903 - PORT - Assertion failure when stopping replicator while replicator is connecting</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4134">CBL-4134 - Fix empty identity error when building LiteCoreCppTests&amp;C4Tests using XCode 14</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-3993">CBL-3993 - FTS index table not have to be qualified by data source alias in query</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="issues-and-resolutions"><a class="anchor" href="#issues-and-resolutions"></a>Issues and Resolutions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4303">CBL-4303 - Replication failure on MacOs Ventura</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4528">CBL-4528 - Query parameters not being bound</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4529">CBL-4529 - Error when saving documents with LiteCore error 17: must be called during a transaction</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4450">CBL-4450 - Stop replicator could cause 'database is locked' error when saving a document</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4448">CBL-4448 - Replicator may get stuck when there is an error of "Invalid delta"</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4418">CBL-4418 - Replicator is stuck in busy state when there is an error thrown while applying delta to create full fleece doc</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4410">CBL-4410 - Compaction could cause "database is locked" error when the replicator attempts to save its checkpoint at the same time</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4388">CBL-4388 - The URL Scheme the HTTP Message is incorrect when using proxy</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4325">CBL-4325 - Opening the upgraded database from 2.8 to 3.0.2 is slow</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4021">CBL-4021 - Query parameters not being bound</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-3715">CBL-3715 - Query document expiration is failing</a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4570">CBL-4570 - URLEndpointListener.getURLs returns an empty list on Android v&gt;=11</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="known-issues"><a class="anchor" href="#known-issues"></a>Known Issues</h3>
+<div class="paragraph">
+<p>None for this release.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="maint-3-0-8"><a class="anchor" href="#maint-3-0-8"></a>3.0.8&#8201;&#8212;&#8201;February 2023</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Version 3.0.8 for C#.Net delivers the following features and enhancements:</p>
+</div>
+<div class="sect2">
+<h3 id="enhancements-2"><a class="anchor" href="#enhancements-2"></a>Enhancements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4142"> CBL-4142 -- Implement AcceptParentDomainCookies API </a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4141"> CBL-4141 -- Provide option to Save Cookie with Domain being a parent domain of the request </a></p>
+</li>
+<li>
+<p><a href="https://issues.couchbase.com/browse/CBL-4133"> CBL-4133 -- Network change listener re-work </a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="issues-and-resolutions-2"><a class="anchor" href="#issues-and-resolutions-2"></a>Issues and Resolutions</h3>
+<div class="paragraph">
+<p>None for this release.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="known-issues-2"><a class="anchor" href="#known-issues-2"></a>Known Issues</h3>
+<div class="paragraph">
+<p>None for this release.</p>
+</div>
+<div class="quoteblock abstract">
 <blockquote>
 <div class="paragraph">
 <p>Description&#8201;&#8212;&#8201;<em>Couchbase Lite on C#.Net</em><br>
@@ -1981,6 +2097,7 @@ Related Content&#8201;&#8212;&#8201;<a href="#cbl-whatsnew.adoc" class="xref unr
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
 <h2 id="maint-3-0-2"><a class="anchor" href="#maint-3-0-2"></a>3.0.2&#8201;&#8212;&#8201;August 2022</h2>
 <div class="sectionbody">
@@ -1988,7 +2105,7 @@ Related Content&#8201;&#8212;&#8201;<a href="#cbl-whatsnew.adoc" class="xref unr
 <p>Version 3.0.2 of Couchbase Lite for C#.Net delivers a number of fixes and enhancements.</p>
 </div>
 <div class="sect2">
-<h3 id="enhancements"><a class="anchor" href="#enhancements"></a>Enhancements</h3>
+<h3 id="enhancements-3"><a class="anchor" href="#enhancements-3"></a>Enhancements</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2007,7 +2124,7 @@ Related Content&#8201;&#8212;&#8201;<a href="#cbl-whatsnew.adoc" class="xref unr
 
 </div>
 <div class="sect3">
-<h4 id="known-issues"><a class="anchor" href="#known-issues"></a>Known Issues</h4>
+<h4 id="known-issues-3"><a class="anchor" href="#known-issues-3"></a>Known Issues</h4>
 <div class="paragraph">
 <p>None in this release</p>
 </div>
